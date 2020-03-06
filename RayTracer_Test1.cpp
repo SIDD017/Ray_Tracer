@@ -1,31 +1,21 @@
-//#include "Vec3.h"
 #include "Ray.h"
+#include "float.h"
+#include "Hittable_list.h"
+#include "Sphere.h"
 #include <iostream>
 
-float hit_sphere(const Vec3& center, float radius, Ray r)
+Vec3 color(const Ray& r, Hittable *world)
 {
-	Vec3 oc = r.origin() - center;
-	float a = dot(r.direction(), r.direction());
-	float b = 2.0 * dot(oc, r.direction());
-	float c = dot(oc, oc) - (radius * radius);
-	float discriminant = (b * b) - (4 * a * c);
-	if (discriminant < 0)
-		return -1.0;
-	else
-		return (-b - sqrt(discriminant)) / (2 * a);
-}
-
-Vec3 color(const Ray& r)
-{
-	float t = hit_sphere(Vec3(0, 0, -1), 0.5, r);
-	if (t > 0.0)
+	hit_record rec;
+	if (world->hit(r, 0.0, FLT_MAX, rec))
 	{
-		Vec3 N = unit_vector(r.point_at_parameter(t) - Vec3(0, 0, -1));
-		return 0.5 * Vec3(N.x() + 1, N.y() + 1, N.z() + 1);
+		return 0.5 * Vec3(rec.normal.x() + 1, rec.normal.y() + 1, rec.normal.z() + 1);
 	}
-	Vec3 unit_direction = unit_vector(r.direction());
-	t = 0.5 * (unit_direction.y() + 1.0);
-	return (1.0 - t) * Vec3(1.0, 1.0, 1.0) + t * Vec3(0.5, 0.7, 1.0);
+	else {
+		Vec3 unit_direction = unit_vector(r.direction());
+		float t = 0.5 * (unit_direction.y() + 1.0);
+		return (1.0 - t) * Vec3(1.0, 1.0, 1.0) + t * Vec3(0.5, 0.7, 1.0);
+	}
 }
 
 int main()
@@ -37,6 +27,11 @@ int main()
 	Vec3 horizontal(4.0, 0.0, 0.0);
 	Vec3 vertical(0.0, 2.0, 0.0);
 	Vec3 origin(0.0, 0.0, 0.0);
+
+	Hittable* list[2];
+	list[0] = new Sphere(Vec3(0, 0, -1), 0.5);
+	list[1] = new Sphere(Vec3(0, -100.5, -1), 100);
+	Hittable* world = new Hittable_list(list, 2);
 	for (int j = ny - 1; j >= 0; j--)
 	{
 		for (int i = 0; i < nx; i++)
@@ -44,7 +39,10 @@ int main()
 			float u = float(i) / float(nx);
 			float v = float(j) / float(ny);
 			Ray r(origin, lower_left_corner + u * horizontal + v * vertical);
-			Vec3 col = color(r);
+			
+			Vec3 p = r.point_at_parameter(2.0);
+			Vec3 col = color(r, world);
+
 			int ir = int(255.99 * col[0]);
 			int ig = int(255.99 * col[1]);
 			int ib= int(255.99 * col[2]);
