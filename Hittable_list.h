@@ -1,3 +1,4 @@
+#pragma once
 #ifndef HITTABLELISTH
 #define HITTABLELISTH
 

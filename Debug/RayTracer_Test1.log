@@ -1,12 +1,34 @@
 ﻿  RayTracer_Test1.cpp
 C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Vec3.h(49,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Vec3.h(142,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Hittable_list.h(23,30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(14,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(14,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(14,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(22,5): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Hittable_list.h(24,30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Random.h(15,71): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Random.h(15,54): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Random.h(15,37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Camera.h(13,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Camera.h(13,31): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Camera.h(28,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Material.h(17,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\Material.h(98,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(14,5): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(29,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(30,15): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(30,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(44,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(45,50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(45,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(45,18): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(50,148): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(50,113): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(50,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(50,168): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(54,119): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(54,90): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(54,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(54,149): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(54,168): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(58,62): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(64,79): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(65,73): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Siddhartha\source\repos\RayTracer_Test1\RayTracer_Test1\RayTracer_Test1.cpp(94,22): warning C4305: 'initializing': truncation from 'double' to 'float'
   RayTracer_Test1.vcxproj -> C:\Users\Siddhartha\source\repos\RayTracer_Test1\Debug\RayTracer_Test1.exe

@@ -2,14 +2,16 @@
 #define SPHEREH
 
 #include "Hittable.h"
+#include "Random.h"
 
 class Sphere : public Hittable
 {
 public:
 	Sphere() {}
-	Sphere(Vec3 cen, float r) : center(cen), radius(r) {};
+	Sphere(Vec3 cen, float r, Material *m) : center(cen), radius(r), mat_ptr(m){};
 	Vec3 center;
 	float radius;
+	Material* mat_ptr;
 	virtual bool hit(const Ray& r, float t_min, float t_max, hit_record& rec) const;
 };
 
@@ -28,6 +30,7 @@ bool Sphere::hit(const Ray& r, float t_min, float t_max, hit_record& rec) const
 			rec.t = temp;
 			rec.p = r.point_at_parameter(rec.t);
 			rec.normal = (rec.p - center) / radius;
+			rec.mat_ptr = mat_ptr;
 			return true;
 		}
 		temp = (-b + sqrt(discriminant)) / a;
@@ -36,9 +39,11 @@ bool Sphere::hit(const Ray& r, float t_min, float t_max, hit_record& rec) const
 			rec.t = temp;
 			rec.p = r.point_at_parameter(rec.t);
 			rec.normal = (rec.p - center) / radius;
+			rec.mat_ptr = mat_ptr;
 			return true;
 		}
 	}
 	return false;
 }
+
 #endif
