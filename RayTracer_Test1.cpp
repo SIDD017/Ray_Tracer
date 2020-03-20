@@ -69,9 +69,9 @@ Hittable* random_scene()
 
 int main()
 {
-	int nx = 640;
-	int ny = 360;
-	int ns = 32;
+	int nx = 1280;
+	int ny = 720;
+	int ns = 64;
 	std::cout << "P3\n" << nx << " " << ny << "\n255\n";
 	Vec3 lower_left_corner(-2.0,-1.0,-1.0);
 	Vec3 horizontal(4.0, 0.0, 0.0);
